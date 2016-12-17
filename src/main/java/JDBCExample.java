@@ -4,11 +4,11 @@ import java.sql.*;
 public class JDBCExample {
     // JDBC driver name and database URL
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost/STUDENTS";
+    static final String DB_URL = "jdbc:mysql://192.168.140.184/STUDENTS";
 
     //  Database credentials
-    static final String USER = "root";
-    static final String PASS = "luki";
+    static final String USER = "piotr";
+    static final String PASS = "pass";
 
     public static void main(String[] args) {
         Connection conn = null;
@@ -27,7 +27,7 @@ public class JDBCExample {
 
             // Testing User
             User.statement = stmt;
-            User u1 = new User(105, "name", "pass", 7.9, 3);
+            User u1 = new User(111, "name", "pass", 7.9, 3);
 
             System.out.println(u1.convertToString());
             u1.insert();

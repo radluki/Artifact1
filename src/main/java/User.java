@@ -38,10 +38,10 @@ public class User {
         }
     }
 
-    public static User getUserFromDatabase(String name,String password){
-        User u = User.statement.executeQuery("SELECT * FROM "+User.__table__+" WHERE Name = "+name+", Password = "+password);
-        return u;
-    }
+//    public static User getUserFromDatabase(String name,String password){
+//        User u = User.statement.executeQuery("SELECT * FROM "+User.__table__+" WHERE Name = "+name+", Password = "+password);
+//        return u;
+//    }
 
     public static void main(String[] args) {
         User u1 = new User(100, "name", "pass", 2, 3);
